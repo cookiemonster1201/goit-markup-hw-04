@@ -220,10 +220,6 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/main/hero-background.jpg");
-
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
 }
 
 .hero-wrapper {
