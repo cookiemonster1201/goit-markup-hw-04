@@ -13,6 +13,7 @@
   --secondary-font: "Raleway", sans-serif;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --logo-color: #000;
   --primary-background-color: #fff;
   --secondary-background-color: #f5f4fa;
   --footer-background: #2f303a;
@@ -72,7 +73,7 @@ img {
 
 /* =============COMPONENTS!!!=============== */
 .logo {
-  font-family: var(--secondary-font);
+  font-family: var(--logo-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -344,7 +345,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.employee-card-thumb {
+.employee-card-wrapper {
   padding: 30px 32px;
 }
 
@@ -366,16 +367,12 @@ img {
   color: var(--primary-text-color);
 }
 
-.social-links {
+.social {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.social-links-item + .social-links-item {
-  margin-left: 10px;
-}
-
-.social-links-link {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,12 +382,12 @@ img {
   color: #afb1b8;
 }
 
-.social-links-icon {
+.social-icon {
   fill: currentColor;
 }
 
-.social-links-link:hover,
-.social-links-link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   color: #fff;
 }
@@ -489,11 +486,11 @@ img {
   margin-left: 70px;
 }
 
-.appeal-box > .social-links {
-  padding: 0;
+.appeal-box .social-item + .social-item {
+  margin-left: 10px;
 }
 
-.social-links-link.dark-theme {
+.social-link.dark-theme {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,8 +501,8 @@ img {
   color: #fff;
 }
 
-.social-links-link.dark-theme:hover,
-.social-links-link.dark-theme:focus {
+.social-link.dark-theme:hover,
+.social-link.dark-theme:focus {
   background-color: var(--accent-color);
 }
 /* ===============FOOTER END!!!=================================== */
